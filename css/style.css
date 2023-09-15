@@ -1,0 +1,120 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a modern font */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9; /* Set a light background color */
+}
+
+/* Style the header section */
+.header {
+    background-color: #fff; /* Set a white background color */
+    color: #333; /* Set text color to dark gray */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.header h1 {
+    font-size: 36px; /* Increase the font size for the header */
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+.navbar {
+    background-color: #007aff; /* Set a blue background color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/* Style the container for each section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style headings */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Style paragraphs */
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Style buttons */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007aff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Style images */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the FAQ section */
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Style FAQ questions */
+.faq h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Style FAQ answers */
+.faq p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}

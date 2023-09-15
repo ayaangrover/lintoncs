@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>7th Grade Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://uploads-ssl.webflow.com/img/favicon.ico">
+    <link rel="apple-touch-icon" href="https://uploads-ssl.webflow.com/img/webclip.png">
+</head>
+
+<body class="body">
+    <div role="banner" class="navbar w-nav">
+        <p class="top">Made with <> by <a href="https://ayaangrover.github.io">Ayaan Grover</a></p>
+        <div class="w-container">
+            <a href="" class="w-nav-brand">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wdhAMwN-Wqk9bAPMJreiwj-OXPvWMkJhB06YmBYe&s"
+                    loading="lazy" alt="" class="logo">
+            </a>
+            <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+    <div class="w-layout-block container w-container">
+        <h1 class="heading">About the Class</h1>
+        <p>This course teaches programming and web development, with grading based on participation and projects.</p>
+        <a class="major-button w-button" onclick="smoothScroll(document.getElementById('info'))">Tell me more</a>
+        <img src="images/room.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939.9874877929688px" alt="" class="image">
+        <div id="info">
+            <h2>Course Objective</h2>
+            <p>The overarching goal of this course is to foster a comprehensive understanding and application of
+                fundamental programming concepts through the creation of web-based programs. The course is designed to
+                instill proficiency in both core programming language concepts and essential web development principles.
+            </p>
+            <br>
+            <h2>Programming Language Concepts</h2>
+            <p>In pursuit of our objective, we will delve into the following critical programming language concepts:
+                <br>
+                Statements: Learning how to construct clear and concise code instructions.<br><br>
+                Variables: Grasping the concept of variables and their pivotal role in programming.<br><br>
+                Conditionals (If statements): Understanding conditional statements for decision-making within
+                programs.<br><br>
+                Loops: Mastery of loop structures to facilitate repetitive tasks.<br><br>
+                Methods / Functions: Proficiency in creating and implementing functions for modular code design.<br><br>
+            </p>
+            <br>
+            <h2>Web Programming Concepts</h2>
+            <p>In parallel with programming language fundamentals, we will also explore the essential concepts of web
+                development:<br>
+
+                HTML (Hypertext Markup Language): In-depth comprehension of HTML for structuring web content.<br><br>
+                CSS (Cascading Style Sheets): A comprehensive exploration of CSS for precise web layout and stylistic
+                elements.<br><br>
+                JavaScript: Proficiency in JavaScript programming, enabling dynamic web functionality.<br><br>
+            </p>
+            <br>
+            <h2>Tools</h2>
+            <p>To facilitate our learning journey, we will be utilizing the following tool:<br><br>
+                Repl.it: A versatile platform for coding and project development.</p>
+            <br>
+            <h2>Grading</h2>
+            <p>There will be no conventional homework assignments or tests in this course. Instead, your performance
+                will be evaluated as follows:<br>
+                <br>
+                50% Participation: Active engagement in in-class discussions, including both asking and answering
+                questions. This encompasses individual and group participation.<br>
+                <br>
+                50% Projects: Your assessment will largely be based on the successful completion of in-class projects,
+                culminating in the development of a comprehensive web application project.<br>
+            </p>
+            <br>
+            <h2>Expectations</h2>
+            <p>To ensure your success in this course, we have outlined the following expectations:<br><br>
+
+                Engagement with Lectures: Actively participate by following along with the lectures and experimenting with the techniques elucidated.<br><br>
+                
+                Weekly Submissions: Stay on track by submitting weekly assignments promptly.<br><br>
+                
+                Seek Clarification: Do not hesitate to seek clarification when any concept remains unclear. Effective communication is integral to your learning experience.<br><br>
+                
+                Creativity and Initiative: Embrace your creative spirit and challenge yourself to push boundaries when working on your projects. Innovation is encouraged and appreciated.<br><br>
+                
+            </p>
+            <h3>By adhering to these guidelines and embracing the course materials, you will not only gain a profound understanding of programming and web development but also equip yourself with valuable skills for the future.</h3>
+        </div>
+    </div>
+    <script>
+        window.smoothScroll = function (target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function (c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function () { scroll(c, a, b, i); }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }
+
+    </script>
+</body>
+
+</html>
